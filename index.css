@@ -1,0 +1,87 @@
+body {
+    background-color: #ece8e5;
+}
+.main {
+    height: 40px;
+    width: 100%;
+    background: #455868;
+    font-weight: bold;
+    position: relative;
+    border-bottom: 2px solid #283744;
+}
+.container{
+    display: flex;
+}
+li {
+    display: inline;
+    color: #fff;
+    width: 110px;
+    text-align: center;
+    text-decoration: none;
+    line-height: 40px;
+    text-shadow: 1px 1px 0px #283744;
+    cursor: pointer;
+}
+
+li:hover, li:active {
+    background-color: #8c99a4;
+}
+p{
+    display: none;
+}
+button{
+    top: 0px;
+    right: 0px;
+    display: none;
+    position: absolute;
+    text-align: center;
+    cursor: pointer;
+}
+.container2{
+    display: none;
+}
+.hide{
+    display: none;
+}
+@media screen and ( min-width : 973px) {
+    .hide{
+        display: none !important;
+    }
+    .x{
+        display: none;
+    }
+    #pull{
+        display: none;
+    }
+}
+@media screen and (max-width: 972px) {
+    .main{
+        height: auto;
+    }
+    ul {
+        width: 100%;
+        display: block;
+        height: auto;
+    }
+    li {
+        width: 50%;
+        float: left;
+        position: relative;
+    }
+}
+@media only screen and (max-width : 480px) {
+    li {
+        display: none;
+    }
+    #pull{
+        display: block;
+    }
+
+}
+@media only screen and (max-width : 320px) {
+    li {
+        display: block;
+        float: none;
+        width: 100%;
+    }
+}
